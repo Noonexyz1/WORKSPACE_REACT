@@ -1,0 +1,7 @@
+.navegacion-clase{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(191, 9, 228);
+
+}
