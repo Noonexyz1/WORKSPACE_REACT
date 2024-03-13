@@ -1,0 +1,15 @@
+.direction-header{
+    /*Container*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /*Items*/
+
+    background-color: #1a1a1a;
+}
+
+.direction-list-items{
+    display: flex;
+    flex-direction: row;
+}
