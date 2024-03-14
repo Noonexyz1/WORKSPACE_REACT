@@ -5,7 +5,10 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  
+  
+  background-image: url('https://www.neoprx.com/assets/images/main-slider-01.jpg');
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,6 +33,12 @@ body {
   margin: 0;  
   min-width: 320px;
   min-height: 100vh;
+
+  /*background-color: #242424;*/
+  /*background-color: #1C1F32;*/
+  background: rgb(28,31,50);
+  background: linear-gradient(131deg, rgba(28,31,50,1) 15%, rgba(240,119,64,0) 100%);
+
 }
 
 h1 {
@@ -44,7 +53,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  /*background-color: #1a1a1a;*/
+  background-color: rgb(246, 113, 64);
   cursor: pointer;
   transition: border-color 0.25s;
 }

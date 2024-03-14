@@ -1,9 +1,9 @@
 import './LogoHeader.css'
 
-function LogoHeader() {
+function LogoHeader(props) {
     return(
         <div className="space-between-logo">
-            <img src="https://asset.brandfetch.io/idBm_3iMi3/idnTMKo7Qh.svg?updated=1702279083657" />
+            <img src={props.logo} alt='logo' />
         </div>
     );
 }

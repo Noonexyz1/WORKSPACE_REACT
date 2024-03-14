@@ -6,10 +6,14 @@
 
     /*Items*/
 
-    background-color: #1a1a1a;
+    background-color: #1a1a1a00;
 }
 
 .direction-list-items{
     display: flex;
     flex-direction: row;
+}
+
+.color-list-items{
+    color: #409ea5;
 }

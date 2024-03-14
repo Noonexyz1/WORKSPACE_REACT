@@ -4,3 +4,14 @@
     padding-left: 4px;
     padding-right: 4px;
 }
+
+.hover-item:hover{
+    background-color: #f67140;
+    color: aliceblue;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hover-item:focus,
+.hover-item:focus-visible{
+    outline: 4px auto -webkit-focus-ring-color;
+}

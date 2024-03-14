@@ -1,12 +1,9 @@
 import './ItemHeaderOption.css'
 
-function ItemHeaderOption() {
-    //debo recibir este valor por parametro
-    let nombreItem = "Item..."
-
+function ItemHeaderOption(props) {
     return(
-        <div className='space-between-item'>
-            <h2>{nombreItem}</h2>
+        <div className='space-between-item hover-item'>
+            <h2>{props.nameItem}</h2>
         </div>
     );
 }

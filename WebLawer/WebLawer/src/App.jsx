@@ -1,13 +1,13 @@
 import './App.css'
+import Body from './pages/Body'
 
 import Header from './pages/Header'
-import BodyInformation from './pages/BodyInformation'
 
 function App() {
   return (
     <>
       <Header/>
-      <BodyInformation/>
+      <Body/>
     </>
   )
 }
