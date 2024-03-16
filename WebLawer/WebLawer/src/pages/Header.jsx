@@ -6,7 +6,7 @@ import Logo from '../assets/logo-firma.jpg'
 
 const headerValues = {
     ourLogo: Logo,
-    valueItems: ["Nosotros", "La Familia", "Resultados", "Especialidades", "Veredictos", "Contáctanos"]
+    valueItems: ["Nosotros", "La Familia", "Resultados", "Especialidades", "Veredictos", "Contáctanos","Login"]
 }
 
 
@@ -21,6 +21,7 @@ function Header() {
                 <ItemHeaderOption nameItem={headerValues.valueItems[3]}/>
                 <ItemHeaderOption nameItem={headerValues.valueItems[4]}/>
                 <ItemHeaderOption nameItem={headerValues.valueItems[5]}/>
+                <ItemHeaderOption nameItem={headerValues.valueItems[6]}/>
             </div>
         </div>
     );
