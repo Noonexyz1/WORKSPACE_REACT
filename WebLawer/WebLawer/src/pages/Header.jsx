@@ -2,7 +2,7 @@ import ItemHeaderOption from "./ItemHeaderOption";
 import LogoHeader from "./LogoHeader";
 
 import './Header.css'
-import Logo from '../assets/logo-firma.jpg'
+import Logo from '../assets/logo-firma.png'
 
 const headerValues = {
     ourLogo: Logo,

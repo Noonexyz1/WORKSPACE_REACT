@@ -1,7 +1,7 @@
-import Logo from '../assets/logo-firma.jpg'
+import Logo from '../assets/logo-firma.png'
 
 import './Login.css'
-import LogoHeader from './LogoHeader';
+import LogoLogin from './LogoLogin';
 /*Tengo que heredar todos los css de los botones, titulos y demas para solamente aplicarlo*/
 
 function Login() {
@@ -9,7 +9,7 @@ function Login() {
         <div className='display-flex-form'>
             <form action="" method="post" className='direction-elements-from'>
                 <div className='logo-central-login'>
-                    <LogoHeader logo={Logo}/>
+                    <LogoLogin  logo={Logo}/>
                 </div>
                 <h1 className='logo-central-login'>Login</h1>
                 <label for="username">Usuario o Email:</label>
