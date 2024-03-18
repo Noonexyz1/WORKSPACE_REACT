@@ -1,0 +1,12 @@
+.background-test{
+    background-color: red;
+}
+.direction-for-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.spacing-cards-footer{
+    margin: 5px;
+    padding: 5px;
+}
