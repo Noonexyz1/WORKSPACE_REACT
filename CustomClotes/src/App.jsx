@@ -9,13 +9,7 @@ function App() {
 
   return (
     <>
-    
-      <h1 className="text-3xl font-mono underline">
-        ¡Hola, mundo!
-      </h1>
-
       <CardProductView/>
-
     </>
   )
 }
