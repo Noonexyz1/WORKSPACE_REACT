@@ -7,7 +7,7 @@ import polera3 from '../assets/polera3.png'
 const products = [
     {
         id: 1,
-        name: 'Polera Roja',
+        name: 'Basic Tee',
         href: '#',
         imageSrc: polera2,
         imageAlt: "Front of men's Basic Tee in black.",
@@ -19,7 +19,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Polera Naranja',
+        name: 'Basic Tee',
         href: '#',
         imageSrc: polera3,
         imageAlt: "Front of men's Basic Tee in black.",
@@ -31,7 +31,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Polera Verde',
+        name: 'Basic Tee',
         href: '#',
         imageSrc: polera2,
         imageAlt: "Front of men's Basic Tee in black.",
@@ -43,7 +43,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Color Azul',
+        name: 'Basic Tee',
         href: '#',
         imageSrc: polera2,
         imageAlt: "Front of men's Basic Tee in black.",
@@ -55,7 +55,7 @@ const products = [
     }
 ]
 
-export default function CardProductView() {
+export default function Decorator() {
     return (
         <div className="bg-red-500 rounded-t-3xl rounded-b-3xl my-8">
             <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-10 lg:max-w-7xl lg:px-8">

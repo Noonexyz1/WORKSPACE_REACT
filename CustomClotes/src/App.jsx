@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import CardProductView from './components/CardProductView'
 import CustonArea from './components/CustomArea'
+import Decorator from './components/Decorator'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
     <>
       <CardProductView/>
       <CustonArea/>
+      <Decorator/>
     </>
   )
 }

@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Menu, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import {FunnelIcon, MinusIcon, PlusIcon} from '@heroicons/react/20/solid'
+import ImageForCustomArea from './ImageForCustomArea'
 
 const filters = [
     {
@@ -45,7 +46,7 @@ export default function Example() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
 
     return (
-        <div className="bg-white">
+        <div className="bg-red-500 rounded-t-3xl rounded-b-3xl my-8">
             <div>
                 <Transition.Root show={mobileFiltersOpen} as={Fragment}>
                     <Dialog as="div" className="relative z-40 lg:hidden" onClose={setMobileFiltersOpen}>
@@ -216,28 +217,10 @@ export default function Example() {
 
 
                             {/* Product grid */}
-                            <div className="lg:col-span-3 bg-slate-500">
-                                {/* Your content */}
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
-                                <p>aaaaaaaaaaa</p>
+                            <div className="lg:col-span-3 bg-slate-500 rounded-t-3xl rounded-b-3xl">
+                                <ImageForCustomArea/>
                             </div>
+
                         </div>
 
                     </section>
