@@ -1,16 +1,14 @@
 export class UserName {
-    value: String;
+  value: string;
 
-    constructor(value: String){
-        this.value = value;
-        this.ensureIsValid();
+  constructor(value: string) {
+    this.value = value;
+    this.ensureIsValid();
+  }
+
+  private ensureIsValid() {
+    if (this.value.length < 3) {
+      throw new Error("UserName must be at least 3 characters long");
     }
-
-    //Mi regla de negocio es por ejemplo que todos los nombres sean mayor a tres caracteres
-    private ensureIsValid(){
-        if(this.value.length < 3) {
-            throw new Error("UserName must be at least 3 characteres as long");
-        }
-    }
-
+  }
 }

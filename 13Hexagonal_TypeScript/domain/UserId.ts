@@ -1,16 +1,14 @@
 export class UserId {
-    value: String;
+  value: string;
 
-    constructor(value: String){
-        this.value = value;
-        this.ensureIsValid();
+  constructor(value: string) {
+    this.value = value;
+    this.ensureIsValid();
+  }
+
+  private ensureIsValid() {
+    if (this.value.length < 5) {
+      throw new Error("UserId must be at least 5 characters long");
     }
-
-    //Mi regla de negocio es por ejemplo que todos los ID tenga cinco caracteres menos
-    private ensureIsValid(){
-        if(this.value.length < 5) {
-            throw new Error("UserID must be at least 5 characteres as long");
-        }
-    }
-
+  }
 }
