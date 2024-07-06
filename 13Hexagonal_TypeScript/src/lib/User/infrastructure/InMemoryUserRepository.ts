@@ -1,5 +1,5 @@
 import { User } from "../domain/User";
-import { UserId } from "../domain/UserId";
+import { UserId } from "../domain/value-objects/UserId";
 import { UserRepository } from "../domain/UserRepository";
 
 export class InMemoryUserRepository implements UserRepository {

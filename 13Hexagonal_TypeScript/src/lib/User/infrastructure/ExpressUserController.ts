@@ -30,12 +30,7 @@ export class ExpressUserController {
       email: string;
       createdAt: string;
     };
-    await ServiceContainer.user.create.run(
-      id,
-      name,
-      email,
-      new Date(createdAt)
-    );
+    await ServiceContainer.user.create.run(id, name, email, new Date(createdAt));
 
     return res.status(201).send();
   }

@@ -1,11 +1,12 @@
 import { Pool } from "pg";
 import { UserRepository } from "../domain/UserRepository";
 import { User } from "../domain/User";
-import { UserId } from "../domain/UserId";
-import { UserName } from "../domain/UserName";
-import { UserEmail } from "../domain/UserEmail";
-import { UserCreatedAt } from "../domain/UserCreatedAt";
+import { UserId } from "../domain/value-objects/UserId";
+import { UserName } from "../domain/value-objects/UserName";
+import { UserEmail } from "../domain/value-objects/UserEmail";
+import { UserCreatedAt } from "../domain/value-objects/UserCreatedAt";
 
+//entity
 type PostgresUser = {
   id: string;
   name: string;
@@ -14,12 +15,11 @@ type PostgresUser = {
 };
 
 export class PostgresUserRepository implements UserRepository {
+  //repository
   client: Pool;
 
   constructor(databaseUrl: string) {
-    this.client = new Pool({
-      connectionString: databaseUrl,
-    });
+    this.client = new Pool({connectionString: databaseUrl,});
   }
 
   async create(user: User): Promise<void> {
@@ -77,11 +77,6 @@ export class PostgresUserRepository implements UserRepository {
   }
 
   private mapToDomain(user: PostgresUser): User {
-    return new User(
-      new UserId(user.id),
-      new UserName(user.name),
-      new UserEmail(user.email),
-      new UserCreatedAt(user.created_at)
-    );
+    return new User(new UserId(user.id), new UserName(user.name), new UserEmail(user.email), new UserCreatedAt(user.created_at));
   }
 }

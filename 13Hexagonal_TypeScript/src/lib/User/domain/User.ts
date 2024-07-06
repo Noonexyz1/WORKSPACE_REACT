@@ -1,7 +1,7 @@
-import { UserCreatedAt } from "./UserCreatedAt";
-import { UserEmail } from "./UserEmail";
-import { UserId } from "./UserId";
-import { UserName } from "./UserName";
+import { UserCreatedAt } from "./value-objects/UserCreatedAt";
+import { UserEmail } from "./value-objects/UserEmail";
+import { UserId } from "./value-objects/UserId";
+import { UserName } from "./value-objects/UserName";
 
 export class User {
   id: UserId;
@@ -9,12 +9,7 @@ export class User {
   email: UserEmail;
   createdAt: UserCreatedAt;
 
-  constructor(
-    id: UserId,
-    name: UserName,
-    email: UserEmail,
-    createdAt: UserCreatedAt
-  ) {
+  constructor(id: UserId, name: UserName, email: UserEmail, createdAt: UserCreatedAt) {
     this.id = id;
     this.name = name;
     this.email = email;

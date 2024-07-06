@@ -1,7 +1,8 @@
-import { UserId } from "../../domain/UserId";
+import { UserId } from "../../domain/value-objects/UserId";
 import { UserRepository } from "../../domain/UserRepository";
 
 export class UserDelete {
+  
   constructor(private repository: UserRepository) {}
 
   async run(id: string): Promise<void> {
