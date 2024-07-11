@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { publisherService } from "../services/SharingInfoService";
+import { subjectAdapter } from "../services/SubjectAdapterInstance";
 
-//este componente recivira la informacion
+//este componente recibira la informacion
 function Componente2() {
   const [count, setCount] = useState(0);
-  const myObservable$ = publisherService.getObservable();
+  const myObservable$ = subjectAdapter.getObservable();
 
+  //efecto secundario
   useEffect(() => {
     myObservable$.subscribe(data => {
       console.log(data);

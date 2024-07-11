@@ -1,9 +1,9 @@
-import { publisherService } from "../services/SharingInfoService"
+import { subjectAdapter } from "../services/SubjectAdapterInstance"
 
 //emitir informacion
 function Componente1() {
   const handleClick = () => {
-    publisherService.shareDataToObservable(100);
+    subjectAdapter.shareDataToObservable(100);
   }
   return (
     <div>
